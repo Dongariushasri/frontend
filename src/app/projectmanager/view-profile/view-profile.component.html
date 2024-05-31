@@ -1,0 +1,17 @@
+<app-projectmanager-navbar></app-projectmanager-navbar>
+<div class="center-container">
+  <div *ngIf="teamMember; else noData" class="member-info">
+    <div>
+      <p>ID: <strong>{{ teamMember.id }}</strong></p>
+      <p>Name: <strong>{{ teamMember.name }}</strong></p>
+      <p>Email: <strong>{{ teamMember.email }}</strong></p>
+      <p>Password: <strong>{{ teamMember.password }}</strong></p>
+    </div>
+    <div class="button-container">
+      <button (click)="editTeamMember(teamMember)" class="button-62">Edit</button>
+    </div>
+  </div>
+  <ng-template #noData>
+    <p>No Project Manager data available.</p>
+  </ng-template>
+</div>

@@ -1,0 +1,43 @@
+/* Default nav item color */
+.nav-link {
+    color: white !important;
+  }
+  
+  /* Highlight the active nav item */
+  .nav-item.active .nav-link {
+    color: #22aa4d !important;
+  }
+  .navbar-nav{
+    font-size: 15px;
+    font-weight: bold;
+  }
+
+  .profile-icon{
+    background-color: white;
+    padding: 5px 10px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    color: #e8f5ef;
+    margin-top: 4px;
+    font-size: 25px;
+  }
+
+  .icon-container{
+    margin-left: auto;
+  }
+
+  .profile-icon{
+    background-color: white;
+    padding: 5px 10px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    color: #e8f5ef;
+    margin-top: 4px;
+    font-size: 25px;
+  }
+
+  .icon-container{
+    margin-left: auto;
+  }

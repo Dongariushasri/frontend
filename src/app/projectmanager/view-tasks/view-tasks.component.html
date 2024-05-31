@@ -1,0 +1,47 @@
+
+<app-projectmanager-navbar></app-projectmanager-navbar>
+  
+  <h2 class="text-center">Tasks Assigned</h2>
+  <div id="cont2">
+    <div class="project-list">
+      <div *ngFor="let task of tasklists" class="project-card">
+        <table>
+          <tbody>
+            <tr>
+              <td colspan="2"><b><u>Task {{ task.id }}</u></b></td>
+            </tr>
+            <tr>
+              <td class="heading">Project Id</td>
+              <td class="content">{{ task.project.id }}</td>
+            </tr>
+            <tr>
+              <td class="heading">Project Name</td>
+              <td class="content">{{ task.project. projectName }}</td>
+            </tr>
+            <tr>
+              <td class="heading">Team Member Id</td>
+              <td class="content">{{ task.teamMember.id }}</td>
+            </tr>
+            <tr>
+              <td class="heading">TeamMemebr Name</td>
+              <td class="content">{{ task.teamMember.name }}</td>
+            </tr>
+            <tr>
+              <td class="heading">Task</td>
+              <td class="content">{{ task.description }}</td>
+            </tr>
+            <tr>
+              <td class="heading">Status</td>
+              <td class="content">{{ status }}</td>
+            </tr>
+            <tr>
+              <td colspan="2" class="button-container">
+                <button (click)="onDelete(task.id)" class="delete">Delete</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      
+    </div>
+  </div>

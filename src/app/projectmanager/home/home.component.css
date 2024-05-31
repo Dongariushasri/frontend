@@ -1,0 +1,141 @@
+/* Navbar styles */
+.navbar {
+  background-color: #333;
+  color: #fff;
+  position: relative; /* Add relative positioning */
+}
+
+.navbar-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.navbar-container a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  margin-right: 20px; /* Add some gap between the links */
+}
+
+.navbar-container a:hover {
+  color: greenyellow; /* Change color on hover */
+}
+
+/* Image styles */
+.hero-image {
+  position: absolute; /* Position the image absolutely */
+  right: 10px; /* Adjust the distance from the right side */
+  top: 50%; /* Align the image vertically */
+  transform: translateY(-50%); /* Center the image vertically */
+}
+
+.hero-image img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+
+/* Remove border for hr */
+hr {
+  border: none;
+  border-top: 1px solid #fff;
+}
+
+/* Reset margin and padding for the whole page */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+  height: auto;
+}
+
+/* Welcome Section */
+.welcome-section {
+  background-color: #f4f4f4;
+  padding: 2em 0;
+}
+
+.welcome-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.welcome-text {
+  flex: 1;
+  padding: 1em;
+  text-align: center;
+}
+
+.welcome-text h1 {
+  margin: 0;
+  font-size: 2.5em;
+  animation: slideIn 1s ease-in-out;
+}
+
+.welcome-text p {
+  font-size: 1.2em;
+}
+
+.welcome-image {
+  flex: 1;
+  text-align: center;
+}
+
+.welcome-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-top: 1rem;
+  animation: fadeIn 2s ease-in-out;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem 0;
+  background: #333;
+  color: #fff;
+  margin-top: 2rem;
+  position: relative;
+  width: 100%;
+  bottom: 0;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}

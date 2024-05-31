@@ -1,0 +1,18 @@
+<app-projectmanager-navbar></app-projectmanager-navbar>
+  <div id="part2">
+    <div id="cont2">
+      <h2>Projects List</h2>
+      <div class="project-list">
+        
+        <div class="project-list">
+          <div *ngFor="let project of projects" class="project-card">
+            <button [routerLink]="['/projectmanager/taskdivide', project.id]">
+              <h3>{{ project.projectName }}</h3>
+              <p>{{ project.description }}</p>
+            </button>
+          </div>
+        </div>
+           
+      </div>
+    </div>
+  </div>

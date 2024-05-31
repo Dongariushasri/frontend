@@ -1,0 +1,117 @@
+#navbar {
+  background-color: #000408;
+  padding: 10px 20px;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #39ff14;
+}
+
+.image-container {
+  display: flex;
+  align-items: center;
+}
+
+.image-container img {
+  height: 50px;
+  width: 45px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.card {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.modal {
+  display: block;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  max-width: 500px;
+  max-height: 80vh; /* Maximum height of 80% of the viewport height */
+  overflow-y: auto; /* Enable vertical scrolling */
+  padding: 20px;
+}
+
+.modal-content {
+  padding: 20px;
+}
+
+.close {
+  float: right;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.team {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+.team th, .team td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+}
+
+.team th {
+  background-color: #f2f2f2;
+}
+
+.team tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.task-assign-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+.task-assign-table th, .task-assign-table td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+}
+
+.task-assign-table th {
+  background-color: #f2f2f2;
+}
+
+.task-assign-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}

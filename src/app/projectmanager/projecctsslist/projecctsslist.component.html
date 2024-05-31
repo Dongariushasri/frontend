@@ -1,0 +1,44 @@
+<app-projectmanager-navbar></app-projectmanager-navbar>
+    
+    <div id="part2">
+      <div>
+      </div>
+      <div id="cont2">
+        <h2>Projects List</h2>
+        <div class="project-list">
+          <div *ngFor="let project of projectstable" class="project-card">
+            <table>
+              <tbody>
+                <tr colspan="2">
+                  <td>Title {{project.id}}</td>
+                </tr>
+                <tr>
+                  <td class="heading">ProjectName</td>
+                  <td class="content">{{ project.projectName }}</td>
+                </tr>
+                <tr>
+                  <td class="heading">Description</td>
+                  <td class="content">{{ project.description }}</td>
+                </tr>
+                <tr>
+                  <td class="heading">ClientName</td>
+                  <td class="content">{{ project.clientName }}</td>
+                </tr>
+                <tr>
+                  <td class="heading">StartDate</td>
+                  <td class="content">{{ project.startDate }}</td>
+                </tr>
+                <tr>
+                  <td class="heading">EndDate</td>
+                  <td class="content">{{ project.endDate }}</td>
+                </tr>
+                <tr>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  

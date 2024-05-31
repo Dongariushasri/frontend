@@ -1,0 +1,27 @@
+<app-teammember-navbar></app-teammember-navbar>
+<div id="part2">
+  <div id="cont2">
+      <div class="project-list">
+          <h2>View Tasks</h2>
+          <div class="project-cards-container">
+              <div *ngFor="let task of tasklists" class="project-card">
+                  <div class="card-header">
+                      Title {{ task.id }}
+                  </div>
+                  <div class="card-body">
+                      <p><span class="heading">Project Id:</span> {{ task.project.id }}</p>
+                      <p><span class="heading">Project Name:</span> {{ task.project.projectName }}</p>
+                      <p><span class="heading">Team Member Id:</span> {{ task.teamMember.id }}</p>
+                      <p><span class="heading">Team Member Name:</span> {{ task.teamMember.name }}</p>
+                      <p><span class="heading">Task:</span> {{ task.description }}</p>
+                      <p><span class="heading">Status:</span> {{status }}</p>
+                      <button (click)="navigateToUpdate(task.id)" class="update-button">Update</button>
+                  </div>
+              </div>
+          </div>
+          <div class="back-button">
+              <a routerLink="/teammember/thome">Back</a>
+          </div>
+      </div>
+  </div>
+</div>
